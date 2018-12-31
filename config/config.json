@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "rest_api",
+    "host": "127.0.0.1",
+    "dialect": "pg"
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "rest_api",
+    "host": "127.0.0.1",
+    "dialect": "pg"
+  },
+  "production": {
+    "username": "root",
+    "password": "password",
+    "database": "rest_api",
+    "host": "127.0.0.1",
+    "dialect": "pg"
+  }
+}
