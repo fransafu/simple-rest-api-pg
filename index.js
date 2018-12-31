@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
+// Llamando appRouter como routes para cargar las rutas
 const routes = require('./routes');
 
+// Definir puerto desde variable de entorno o por defecto 3000
 const PORT_SERVER = process.env.PORT || 3000;
 
 // Se crea la aplicacion
