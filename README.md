@@ -46,3 +46,6 @@ Esto debe crear 3 carpetas (models, migrations y seeders)
 
   \q
 
+9) Creamos el modelo documento
+
+node_modules/.bin/sequelize model:create --name Document --attributes "name:string, document_type:string"

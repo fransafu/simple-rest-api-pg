@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+// Llamando a Sequelize
+const models = require('./models');
+
 // Llamando appRouter como routes para cargar las rutas
 const routes = require('./routes');
 
@@ -17,7 +20,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Se cargan las rutas del proyecto
 routes(app);
 
-// Comienza el servidor a escuchar el puerto especificado
-const server = app.listen(PORT_SERVER, function() {
-  console.log("Servidor corriendo en el puerto: ", server.address().port);
+// sincroniza la base de datos con los modelos
+models.sequelize.sync().then(function() {
+  // Comienza el servidor a escuchar el puerto especificado
+  const server = app.listen(PORT_SERVER, function() {
+    console.log("Servidor corriendo en el puerto: ", server.address().port);
+  });
+  // Manejo de error o exito (pendiente)
+  // server.on('error', onError);
+  // server.on('listening', onListening);
 });
