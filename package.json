@@ -1,0 +1,23 @@
+{
+  "name": "simple-rest-api-pg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fransafu/simple-rest-api-pg.git"
+  },
+  "author": "Francisco Sanchez <fransafu@gmail.com> (fsanchez.cl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fransafu/simple-rest-api-pg/issues"
+  },
+  "homepage": "https://github.com/fransafu/simple-rest-api-pg#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
